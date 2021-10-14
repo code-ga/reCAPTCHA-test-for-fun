@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reCAPTCHA test for fun</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+
 <body>
+    <form action="/" method="get">
+        <div class="g-recaptcha" data-sitekey="6LdKyM0cAAAAAI6Nm_exRUZiUx7OQhz_yzRtpF6k"></div>
+        <br />
+        <input type="submit" value="Submit">
+    </form>
 </body>
-<script src='https://www.google.com/recaptcha/api.js?render=6LdKyM0cAAAAAI6Nm_exRUZiUx7OQhz_yzRtpF6k'> </script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+</script>
 <script src="./script/index.js"></script>
+
 </html>
